@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #479180;
 }
 
 .App-logo {
@@ -40,17 +39,76 @@
 
 h1 {
   padding: 20px;
+  color: white;
 }
 
-.playlist {
+h2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background-color: #479180;
+}
+
+form {
+  padding: 20px;
+  text-align: left;
+  background-color: #a6eddd;
+}
+
+.playlist, .songs {
   background-color: #a6eddd;
   padding: 20px;
   margin: 20px 0;
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .info {
   text-align: left;
+}
+
+.submit {
+  margin-top: 20px;
+  background-color: #37bd44;
+  border: none;
+  color: white;
+  padding: 15px 100px;
+  transition-duration: 0.4s;
+}
+
+.submit:hover {
+  background-color: white; 
+  color: #37bd44; 
+  border: 2px solid #37bd44;
+}
+
+.removeButton {
+  background-color: #d9484f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.removeButton:hover {
+  background-color: white; 
+  color: #d9484f; 
+  border: 2px solid #d9484f;
+}
+
+a:link, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
 }
